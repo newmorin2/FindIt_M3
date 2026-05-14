@@ -4,10 +4,11 @@ import {
   GoogleAuthProvider,
   signInWithPopup
 } from "firebase/auth";
-
+import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase/firebase";
 
 function Login() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -29,6 +30,7 @@ function Login() {
         form.email,
         form.password
       );
+      navigate("/dashboard");
 
       alert("Login successful!");
     } catch (error) {
@@ -41,7 +43,8 @@ function Login() {
 
     try {
       await signInWithPopup(auth, provider);
-
+      navigate("/dashboard");
+      
       alert("Google login successful!");
     } catch (error) {
       alert(error.message);

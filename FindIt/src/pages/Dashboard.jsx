@@ -1,8 +1,14 @@
 import { useAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
   const { user, logout } = useAuth();
-
+  const navigate = useNavigate();
+  
+   const handleLogout = () => {
+    logout();
+    navigate("/login");
+  };
   return (
     <div className="min-h-screen p-8">
       <h1 className="text-4xl font-bold mb-4">
@@ -14,7 +20,7 @@ function Dashboard() {
       </p>
 
       <button
-        onClick={logout}
+        onClick={handleLogout}
         className="bg-red-500 text-white px-4 py-2 rounded"
       >
         Logout
