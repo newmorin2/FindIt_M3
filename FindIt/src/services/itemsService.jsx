@@ -7,6 +7,8 @@ import {
   orderBy,
   serverTimestamp
 } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
+import { deleteDoc } from "firebase/firestore";
 
 const itemsRef = collection(db, "items");
 
@@ -27,4 +29,26 @@ export const getItems = async () => {
     id: doc.id,
     ...doc.data()
   }));
+};
+
+// GET SINGLE ITEM
+export const getItemById = async (id) => {
+  const docRef = doc(db, "items", id);
+
+  const snapshot = await getDoc(docRef);
+
+  if (snapshot.exists()) {
+    return {
+      id: snapshot.id,
+      ...snapshot.data()
+    };
+  }
+
+  return null;
+};
+
+export const deleteItem = async (id) => {
+  const docRef = doc(db, "items", id);
+
+  await deleteDoc(docRef);
 };
