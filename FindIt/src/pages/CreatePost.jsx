@@ -23,7 +23,7 @@ function CreatePost() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    try {  
     await createItem({
       ...form,
       userId: user.uid,
@@ -31,6 +31,9 @@ function CreatePost() {
     });
 
     navigate("/items");
+    } catch (error) {
+      console.log(error);
+    }   
   };
 
   return (

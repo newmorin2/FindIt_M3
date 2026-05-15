@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard'
 import ProtectedRoute from './routes/ProtectedRoute'
 import CreatePost from './pages/CreatePost'
 import Items from './pages/Items'
+import ItemDetails from './pages/ItemDetails'
 import './App.css'
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/items" element={<Items />} />
         <Route path="/create" element={<ProtectedRoute><CreatePost /></ProtectedRoute>} />
-        <Route path="/items" element={<Items />} />
+        <Route path="/items/:id" element={<ItemDetails />} />
       </Routes>
     </BrowserRouter>
     </>
