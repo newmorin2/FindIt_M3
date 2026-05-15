@@ -59,13 +59,6 @@ function MyPosts() {
             </p>
 
             <div className="flex gap-2">
-              <Link
-                to={`/edit/${post.id}`}
-                className="bg-blue-500 text-white px-3 py-1 rounded"
-              >
-                Edit
-              </Link>
-
               <button
                 onClick={() => handleDelete(post.id)}
                 className="bg-red-500 text-white px-3 py-1 rounded"
