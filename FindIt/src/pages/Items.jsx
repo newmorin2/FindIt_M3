@@ -11,7 +11,10 @@ function Items() {
       const data = await getItems();
       setItems(data);
     };
-    const filteredItems = items.filter(item => {
+    
+    fetchData();
+  }, []);
+  const filteredItems = items.filter(item => {
     const matchesSearch =
     item.title.toLowerCase().includes(search.toLowerCase());
 
@@ -21,8 +24,6 @@ function Items() {
      return matchesSearch && matchesFilter;
     });
 
-    fetchData();
-  }, []);
 
   return (
     <div className="min-h-screen p-6 bg-gray-100">
