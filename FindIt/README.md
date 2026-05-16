@@ -1,18 +1,90 @@
-# React + Vite
+# FindIt
+A Lost & Found web application built with React and Firebase that allows users to post, search, and manage lost or found items in real time.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+<em>Built with the tools and technologies:</em>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<img src="https://img.shields.io/badge/REACT-000000.svg?style=flat&logo=REACT&logoColor=white" alt="REACT">
+<img src="https://img.shields.io/badge/Tailwind-F7DF1E.svg?style=flat&logo=Tailwindcss&logoColor=black" alt="tailwind">
+<img src="https://img.shields.io/badge/Firebase-0080ff.svg?style=flat&logo=Firebase&logoColor=black" alt="Firebase">
+<img src="https://img.shields.io/badge/Git-0080ff.svg?style=flat&logo=Git&logoColor=black" alt="Git">
 
-## React Compiler
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+<br>
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## Table of Contents
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Features](#features)
+- [Tech stack](#tech-stack)
+- [Getting Started](#getting-started)
+    - [Installation](#installation)
+    - [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+
+## Features
+
+ - **User Authentication** 
+ - **Search and filter items**  
+ - **Create,view and delete posts**
+ - **Protected Routes (Dashboard, Create, My Posts)**  
+ - **User-specific dashboard (My Posts)**  
+ - **Cloud data persistence using Firestore** 
+ - **Unit testing with Vitest + React Testing Library**  
+ - **CI/CD pipeline using GitHub Actions**  
+
+
+## Tech stack
+- React
+- React router dom
+- Tailwind CSS
+- Firebase
+- Vite
+- Vitest
+- Git
+
+
+## Getting Started
+
+
+### Installation
+
+Build FindIt from the source and install dependencies:
+
+1. **Clone the repository:**
+
+    ```sh
+    ❯ git clone https://github.com/newmorin2/FindIt_M3
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```sh
+    ❯ cd FindIt
+    ```
+
+3. **Install the dependencies:**
+
+    ```sh
+     npm install
+    ```
+
+### Usage
+
+4. **Run the project with:**
+
+    ```sh
+    npm run dev
+    ```
+5. **Run the test with:**
+    ```sh
+    npm run test
+    ```
+
+## Contributing
+
+- Newton Mwangi
+
+
