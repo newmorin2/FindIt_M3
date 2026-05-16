@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
@@ -8,6 +9,7 @@ import ProtectedRoute from './routes/ProtectedRoute'
 import CreatePost from './pages/CreatePost'
 import Items from './pages/Items'
 import ItemDetails from './pages/ItemDetails'
+import MyPosts from "./pages/MyPosts";
 import './App.css'
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -23,6 +26,7 @@ function App() {
         <Route path="/items" element={<Items />} />
         <Route path="/create" element={<ProtectedRoute><CreatePost /></ProtectedRoute>} />
         <Route path="/items/:id" element={<ItemDetails />} />
+        <Route path="/my-posts" element={<ProtectedRoute><MyPosts /></ProtectedRoute>} />
       </Routes>
     </BrowserRouter>
     </>
