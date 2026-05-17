@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: .
+        working-directory: FindIt_M3
 
       - name: Run tests
         run: npm run test
