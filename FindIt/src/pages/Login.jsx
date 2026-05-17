@@ -78,7 +78,7 @@ function Login() {
         />
 
         <button
-          className="w-full bg-black text-white p-3 rounded-lg mb-4"
+          className="w-full bg-green-500 text-white p-3 rounded-lg mb-4"
         >
           Login
         </button>

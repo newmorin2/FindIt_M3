@@ -6,15 +6,15 @@ function Home() {
     backgroundImage:
       "url('/Images/hands.jpg')"
   }}>
-      <div className="absolute inset-0 bg-black/5"></div>
+      <div className="absolute inset-0 bg-black/5 pointer-events-none"></div>
       <div className="max-w-2xl text-center  p-10 ">
 
         <h1 className="text-4xl font-bold mb-4">
           Welcome to FindIt📍
         </h1>
 
-        <p className="text-gray-700 mb-6">
-          An easy to use Lost & Found platform where users can report,
+        <p className="text-gray-600 mb-6">
+          An easy to use lost & found platform where users can report,
           search, and recover lost items 
         </p>
 

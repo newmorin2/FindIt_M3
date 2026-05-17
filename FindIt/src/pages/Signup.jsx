@@ -62,7 +62,7 @@ function Signup() {
         />
 
         <button
-          className="w-full bg-black text-white p-3 rounded-lg"
+          className="w-full bg-green-500 text-white p-3 rounded-lg"
         >
           SignUp
         </button>
