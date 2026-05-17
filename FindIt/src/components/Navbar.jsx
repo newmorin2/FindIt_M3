@@ -5,14 +5,14 @@ function Navbar() {
   const { user, logout } = useAuth();
 
   return (
-    <nav className="bg-black text-white px-6 py-4">
+    <nav className="bg-green-500 text-white px-6 py-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
         <Link
           to="/"
-          className="text-2xl font-bold"
+          className="text-3xl font-bold"
         >
-          FindIt
+          FindIt📍
         </Link>
 
         <div className="flex flex-wrap gap-4 items-center">

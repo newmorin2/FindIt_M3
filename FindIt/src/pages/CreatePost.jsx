@@ -76,7 +76,7 @@ function CreatePost() {
           onChange={handleChange}
         />
 
-        <button className="w-full bg-black text-white p-2">
+        <button className="w-full bg-green-500 text-white p-2">
           Submit
         </button>
       </form>
