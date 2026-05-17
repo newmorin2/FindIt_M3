@@ -15,7 +15,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: .
+        working-directory: FindIt
 
     steps:
       - uses: actions/checkout@v4
