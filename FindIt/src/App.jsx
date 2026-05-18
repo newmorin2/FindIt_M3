@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/newmorin2/FindIt_M3">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
