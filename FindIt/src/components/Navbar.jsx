@@ -31,12 +31,8 @@ function Navbar() {
                 Create Post
               </Link>
 
-              <Link to="/myposts">
+              <Link to="/my-posts">
                 My Posts
-              </Link>
-
-              <Link to="/dashboard">
-                Dashboard
               </Link>
 
               <button

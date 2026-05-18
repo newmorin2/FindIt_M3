@@ -88,7 +88,7 @@ function Login() {
           onClick={handleGoogleLogin}
           className="w-full border p-3 rounded-lg"
         >
-          Continue with Google
+          Login with Google
         </button>
       </form>
     </div>
